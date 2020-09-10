@@ -35,10 +35,13 @@ const App = () => {
         - otherwise just return the post object unchanged.
      */
     
-     setProfilePosts(profilePosts.map(cb => {
-        return (cb.id === postId ? {...cb, likes: cb.likes + 1 } : cb)
-     }
-     ))
+     setProfilePosts(profilePosts.map((cb) => {
+        if (cb.id === postId){
+          return {...cb, likes: cb.likes + 1};
+        }
+        return cb;
+      })
+     );
     };
     
   return (
