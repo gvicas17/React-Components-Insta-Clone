@@ -4,6 +4,7 @@ import LikeSection from './LikeSection';
 import PostHeader from './PostHeader';
 
 const Post = props => {
+  console.log(props)
   // 🔥 Make sure the parent of Post is passing the right props!
   const { post, likePost } = props;
 

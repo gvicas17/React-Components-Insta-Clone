@@ -3,6 +3,7 @@ import Post from './Post';
 import './Posts.css';
 
 const Posts = (props) => {
+  console.log(props)
   // 🔥 Make sure the parent of Posts is passing the right props!
   const { likePost, posts } = props;
   return ( 
